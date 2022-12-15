@@ -16,7 +16,7 @@ beforeEach(() => {
 jest.mock("../functions/requests" /* , () => jest.fn() */);
 
 describe("Test de Login", () => {
-  it.only("ingreso de usuario", async () => {
+  it("ingreso de usuario", async () => {
     const resJson = {
       accessToken:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY2OTg1MzMzNSwiZXhwIjoxNjY5ODU2OTM1LCJzdWIiOiIyIn0.dTllOT6Hgeji3huoGIMVw3NIWA3ZpwaSYsvYJqVy1dM",
@@ -32,28 +32,20 @@ describe("Test de Login", () => {
     };
 
     postLogin./* mockImplementation */ mockResolvedValueOnce(
+      Promise.resolve(
         {
-            json: () => {
-              return Promise.resolve(
-                {
-                    accessToken:"hola",
-                    user:{
-                        role:'hola ROLE',
-                        id:'id'
-                    }
-                }
-                //(resJson) => {
-                //setToken_role(resJson.accessToken, resJson.user.role);
-              //}
-              );
-            },
+          json: () => {
+            return Promise.resolve(resJson);
+          },
         })
-        
-      /* mockImplementationOnce */ 
+      )
+    
+
+    /* mockImplementationOnce */
     //   () => {
     //     console.log("HOLAAAAAAAAAAAA")
     //     return (email, pasword) => {
-           
+
     //       return Promise.resolve({
     //         json: () => {
     //           return Promise.resolve((resJson) => {
@@ -63,7 +55,7 @@ describe("Test de Login", () => {
     //       });
     //     };
     //   }
-   // );
+    // );
 
     render(<Login />, { wrapper: BrowserRouter });
 

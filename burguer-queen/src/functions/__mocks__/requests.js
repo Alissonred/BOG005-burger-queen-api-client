@@ -8,6 +8,10 @@ const resJson = {
 }
 
 export const postLogin = jest.fn();
+export const setToken_role= jest.fn();
+export const  setCurrenId= jest.fn();
+
+
 
 
 /// mock de navigate

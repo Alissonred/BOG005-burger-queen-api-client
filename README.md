@@ -21,11 +21,11 @@ Con perfiles activos para administradores, meseros y jefes de cocina, Burger Que
 ¡Que esperas para transformar digitalmente tu negocio? Empieza ahora!
 
 ## 2. Protipo
-####Vista del mesero 
+#### Vista del mesero 
 ![diagrama-api](/burguer-queen/src/img/Copia%20de%20Verde%20Blanco%20Fot%C3%B3grafo%20Blogger%20Biolink%20Sitio%20Web%20(3).png)
-####Vista del jefe de cocina
+#### Vista del jefe de cocina
 ![diagrama-api](/burguer-queen/src/img/Copia%20de%20Verde%20Blanco%20Fot%C3%B3grafo%20Blogger%20Biolink%20Sitio%20Web%20(4).png)
-####Vista del administrador
+#### Vista del administrador
 ![diagrama-api](/burguer-queen/src/img/Ver%20lista%20de%20productos_%20Administrador.jpg)
 ![diagrama-api](/burguer-queen/src/img/Ver%20lista%20de%20productos_%20Administrador.png)
 

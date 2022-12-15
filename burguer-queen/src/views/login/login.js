@@ -45,8 +45,8 @@ function Login() {
     // agregar validaciones
     postLogin(email, password)
       .then((res) => {
-        console.log("RES:::", res);
-        console.log("RES:::", typeof res);
+        console.log("RES1:::", res);
+        console.log("RES2:::", typeof res);
         return res.json();
       })
       .then((resJson) => {

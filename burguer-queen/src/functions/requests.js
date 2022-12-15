@@ -1,11 +1,13 @@
-export const postLogin = (email, password) => fetch('http://localhost:8080/login', {
+export const postLogin = (email, password) => {
+  console.log('postLogin original');
+  return fetch('http://localhost:8080/login', {
   method: "POST",
   headers: { "Content-type": "application/json" },
   body: JSON.stringify({
     email: email,
     password: password,
   })
-})
+})}
 
 export const getUsers = (tokenLogin/* , email, password */) => fetch('http://localhost:8080/users', {
   method: "GET",

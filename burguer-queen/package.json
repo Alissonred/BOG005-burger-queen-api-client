@@ -1,6 +1,5 @@
 {
   "name": "burguer-queen",
-  "homepage": "https://yudadaniela.github.io/BOG005-burger-queen-api-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,9 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "testNico": "react-scripts test --watchAll=false",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

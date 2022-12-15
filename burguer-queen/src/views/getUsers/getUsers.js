@@ -20,7 +20,7 @@ function GetUser() {
   const [editState, setEditState] = useState(false); //Estado de edición
   const [agregarState, setagregarState] = useState(true); // estado de creación de usuario
   const [selectedUser, setSelectedUser] = useState({}); // Usuario seleccionado
-  const [selectedLink, setSelectedLink] = useState(true); // 
+  const [selectedLink, setSelectedLink] = useState(true); // hook para el header
 
   const openModal = () => {
     setisOpenModal(true);
